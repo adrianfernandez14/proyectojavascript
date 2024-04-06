@@ -1,46 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css"> 
-    <script async src="./JS/script.js"></script>
-    <title>WebApp Interactiva</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotizador de Eventos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
     <header>
-        <h1>
-            ¡Bienvenidos a la version beta de MONDO FELICE!
+        <h1 class="display-1">
+            ¡Bienvenidos al cotizador de eventos de MONDO FELICE!
         </h1>
-        <nav>
-            <h2>
-                Aqui podras elegir el evento que quieras celebrar.
-            </h2>
-            <ul>
-                <li><a href="" id="bautismo">Bautismo</a></li>
-                <li><a href="" id="infantiles">Cumpleaños Infantiles</a></li>
-                <li><a href="" id="cumpleanos">Cumpleaños de 15 o de 18</a></li>
-                <li><a href="" id="casamiento">Casamiento</a></li>
-                <li><a href="" id="despedidaSolteros">Despedida de Solteros</a></li>
-                <li><a href="" id="otros">Graduacion, Baby-Shower</a></li>
-            </ul>
-            <h3>
-                Elegiste el siguiente evento a celebrar:
-            </h3>
-            <p id="eventoPreferido">
-
-            </p>
-        </nav>
     </header>
-    <main>
-        
-        <h3>
-            Seccion de comentarios de nuestros clientes:
-        </h3>
-        <input type="text" id="inputComentario" placeholder="Escribe tu comentario aquí">
-        <button id="botonComentar">Comentar</button>
-        <div id="seccionComentarios"></div>
+  <h2 class="fondoBlanco">Cotizar</h2>
 
-    </main>
+  <label for="tipoEvento">Tipo de Evento:</label>
+  <select id="tipoEvento">
+    <option value="Bautismo">Bautismo</option>
+    <option value="Casamiento">Casamiento</option>
+    <option value="Cumpleaños Infantiles">Cumpleaños Infantiles</option>
+    <option value="Cumpleaños de 15">Cumpleaños de 15</option>
+    <option value="Cumpleaños de 18">Cumpleaños de 18</option>
+    <option value="Despedida de Solteros">Despedida de Solteros</option>
+  </select>
+
+  <label for="invitados">Cantidad de Invitados:</label>
+  <input type="number" id="invitados" min="1">
+
+  <button id="cotizar">Cotizar</button>
+
+  <div id="cotizacion">
+    
+  </div>
+
+  <!-- Sección de historial de cotizaciones -->
+  <div id="historial">
+    <h2>Historial de Cotizaciones</h2>
+
+  <ul id="historialCotizaciones"></ul>
+  </div>
+
+  <form id="formularioConfirmacion">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" required>
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" required>
+    <button type="submit">Confirmar</button>
+  </form>
+
+  <!-- Mensaje de agradecimiento -->
+  <div id="mensajeAgradecimiento" style="display: none;">
+    <p>¡Gracias por tu interés en nuestros eventos!</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="/JS/script.js"></script>
 </body>
 </html>

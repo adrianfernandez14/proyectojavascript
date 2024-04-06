@@ -1,10 +1,17 @@
 html{
-    background-color: cornflowerblue;
+    
     margin: 20px;
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(/ASSETS/IMG-20231026-WA0049.jpg);
+    opacity: 80%;
 }
 
 ul li {
     list-style: none;
+}
+
+.fondoBlanco {
+    background-color: blanchedalmond;
+    justify-content: center;
 }

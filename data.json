@@ -1,0 +1,29 @@
+{
+    "eventos": [
+      {
+        "tipo": "Bautismo",
+        "costoBase": 2000
+      },
+      {
+        "tipo": "Casamiento",
+        "costoBase": 5000
+      },
+      {
+        "tipo": "Cumpleaños Infantiles",
+        "costoBase": 1000
+      },
+      {
+        "tipo": "Cumpleaños de 15",
+        "costoBase": 3000
+      },
+      {
+        "tipo": "Cumpleaños de 18",
+        "costoBase": 3500
+      },
+      {
+        "tipo": "Despedida de Solteros",
+        "costoBase": 1500
+      }
+    ]
+  }
+  
